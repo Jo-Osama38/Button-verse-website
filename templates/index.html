@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ButtonVerse</title>
+    <link rel="stylesheet" href="{{ url_for('static' , filename='style.css')}}">
+    <title>Button Verse</title>
 </head>
 <body>
-    <button type="submit">1</button>
+    <div class="verse">
+        {% for button in buttons %}
+            <button class="buttons" style="left: {{ button.x }}px; top: {{ button.y }}px;"></button>
+        {% endfor %}
+    </div>
+    
 </body>
-</html>
+</html> 
