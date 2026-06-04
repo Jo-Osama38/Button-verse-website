@@ -6,12 +6,28 @@
     <link rel="stylesheet" href="{{ url_for('static' , filename='style.css')}}">
     <title>Button Verse</title>
 </head>
+
 <body>
     <div class="verse">
+        <button class="buttons" id="button1">#1</button>
         {% for button in buttons %}
-            <button class="buttons" style="left: {{ button.x }}px; top: {{ button.y }}px;"></button>
+                <button class="buttons" id="button{{button.number}}" style="left: {{ button.x }}px; top: {{ button.y }}px;">#{{ button.number }}</button>
         {% endfor %}
     </div>
-    
+
+
+    <script>
+        window.onload = function() {
+
+            let button = document.getElementById("button1");
+
+            button.scrollIntoView({
+                behavior: "instant",
+                block: "center",
+                inline: "center"
+            });
+
+        }
+    </script>
 </body>
 </html> 

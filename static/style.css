@@ -4,26 +4,68 @@
     
 }
 body{
-    padding-bottom: 10em;
-    padding-right:20em ;
+
+    background-image: url("space.png");
+    background-position: center;
+    background-repeat:repeat;
+    background-size: 25% auto;
+    
+    
 }
 .verse{
-    
-    margin: 30em;
-    margin-top: 45em;
+    margin-left: 50em;
+    margin-top: 70em;
     padding-bottom: 2em;
     padding-right: 3em;
     position: relative;
-    width: auto;
-    height: auto;
+    
+}
+
+#button1{
+    background-color: brown;
+    width: 6em;
+    height: 6em;
+    top: 350px;
+    left: 600px;
 }
 
 .buttons{
     position: absolute;
-    color: rebeccapurple;
+    color: rgb(3, 3, 3);
     background-color: rgb(44, 126, 180);
     border-radius: 50%;
-    width: 12em;
-    height: 7.5em;
+    width: 5em;
+    height: 5em;
+    transition: 3s ease;
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+.buttons:focus, .buttons:active {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+#button2,#button3,
+#button4,#button5,
+#button6{
+    background-color: darkgoldenrod;
+}
+
+#button7,#button8,#button9,
+#button10,#button11,#button12,
+#button13,#button14,#button15,
+#button16{
+    background-color:chartreuse;
+}
+
+#button17,#button18,#button19,
+#button20,#button21,#button22,
+#button23,#button24,#button25,
+#button26,#button27,#button28,
+#button29,#button30,#button31
+{
+    background-color:rgb(174, 75, 75);
 }
 
