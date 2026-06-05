@@ -1,11 +1,12 @@
-from flask import Flask ,render_template
+from flask import Flask ,render_template , redirect , url_for
 from math import sin , cos , radians
 
 app = Flask(__name__)
+buttons = []
 
 @app.route("/")
 def home ():
-    buttons = []
+    buttons= []
     center_x = 600
     center_y = 350
     rotate = 0
@@ -21,11 +22,17 @@ def home ():
             x = center_x + radius *cos(angle)
             y = center_y + radius *sin(angle)
             buttons.append({"x":x , "y":y , "number": len(buttons) + 2 })
-        
+
+    return render_template('index.html' ,buttons=buttons )
 
 
-    return render_template('index.html' ,buttons=buttons)
+@app.route("/mode/<int:num>")
+def change_mode(num):
+    return render_template('index.html',buttons = buttons , num=num)
 
+
+
+    
 
 if __name__ == "__main__":
     app.run(debug=True)

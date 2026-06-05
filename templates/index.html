@@ -7,15 +7,18 @@
     <title>Button Verse</title>
 </head>
 
-<body>
-    <div class="verse">
-        <button class="buttons" id="button1">#1</button>
-        {% for button in buttons %}
-                <button class="buttons" id="button{{button.number}}" style="left: {{ button.x }}px; top: {{ button.y }}px;">#{{ button.number }}</button>
-        {% endfor %}
+<body class="mode{{num}}">
+            <a class="buttons" id="button1">#1</a>
+    <div class="space">
+        <div class="verse"> 
+           
+            {% for button in buttons %}
+                    <a class="buttons" id="button{{button.number}}" style="left: {{ button.x }}px; top: {{ button.y }}px; " href="/mode/{{button.number}}">#{{button.number}}</a>
+            {% endfor %}
+        </div>
     </div>
 
-
+ 
     <script>
         window.onload = function() {
 

@@ -22,11 +22,13 @@ body{
 }
 
 #button1{
+    position: absolute;
     background-color: brown;
-    width: 6em;
-    height: 6em;
-    top: 350px;
-    left: 600px;
+    width: 4em;
+    height: 4em;
+    top: 53em;
+    left: 51em;
+    
 }
 
 .buttons{
@@ -34,32 +36,30 @@ body{
     color: rgb(3, 3, 3);
     background-color: rgb(44, 126, 180);
     border-radius: 50%;
-    width: 5em;
-    height: 5em;
+    width: 3em;
+    height: 3em;
     transition: 3s ease;
-    outline: none;
-    border: none;
-    box-shadow: none;
+    box-shadow: 0em 0em 2.5em rgb(0, 204, 255);
+    transition: 2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7em;
 }
-.buttons:focus, .buttons:active {
-    outline: none;
-    border: none;
-    box-shadow: none;
+.buttons:hover{
+    transform: scale(1.2);
 }
-
 #button2,#button3,
 #button4,#button5,
 #button6{
     background-color: darkgoldenrod;
 }
-
 #button7,#button8,#button9,
 #button10,#button11,#button12,
 #button13,#button14,#button15,
 #button16{
     background-color:chartreuse;
 }
-
 #button17,#button18,#button19,
 #button20,#button21,#button22,
 #button23,#button24,#button25,
@@ -67,5 +67,36 @@ body{
 #button29,#button30,#button31
 {
     background-color:rgb(174, 75, 75);
+}
+
+
+/* #### */
+
+.mode2 a {
+    position: absolute;
+    color: rgb(3, 3, 3);
+    background-color: rgb(44, 126, 180);
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    box-shadow: 0em 0em 2.5em rgb(0, 204, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7em;
+}
+.mode2 a:hover{
+    transform: scale(1.2);
+}
+.mode2 .verse{
+    animation: mode2 10s linear infinite;
+}
+@keyframes mode2 {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
 
