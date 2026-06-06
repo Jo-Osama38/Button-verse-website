@@ -12,6 +12,72 @@ body{
     
     
 }
+.defineation{
+    color: white;
+    text-shadow:  0em 0em 2em rgba(0, 24, 240, 0.5); 
+    position: fixed;
+    top: 1em;
+    left: 1em;
+    z-index: 999;
+}
+
+ 
+
+#animtion_name{
+    letter-spacing: 2px;
+    font-family: sans-serif; 
+    margin-top: 0.5em;   
+    font-size: 1.5em; 
+}
+.show_animation{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 3em;
+    left: 7em;
+    z-index: 999;
+    color: white;
+    text-shadow:  0em 0em 2em rgba(0, 24, 240, 0.5); 
+
+}
+
+
+#d1{
+    top: 2.5em;
+}
+#d2{
+    top: 4em;
+}
+#d3{
+    top: 5.5em;
+}
+#d4{
+    top: 7em;
+}
+
+span{
+    padding-right: 1em;
+    border-radius: 15px;
+    background-color: #b8860b;
+    color: #b8860b;
+}
+#color2{
+    background-color: #7fff00;
+    color: #7fff00;
+}
+#color3{
+    background-color: #ee2dff;
+    color: #ee2dff;
+}
+#color4{
+    background-color: #2c7eb4;
+    color: #2c7eb4;
+}
+
+
+
 .verse{
     margin-left: 50em;
     margin-top: 70em;
@@ -55,13 +121,13 @@ a{
 #button2,#button3,
 #button4,#button5,
 #button6{
-    background-color: darkgoldenrod;
+    background-color: #b8860b;
 }
 #button7,#button8,#button9,
 #button10,#button11,#button12,
 #button13,#button14,#button15,
 #button16{
-    background-color:chartreuse;
+    background-color:#7fff00;
 }
 #button17,#button18,#button19,
 #button20,#button21,#button22,
@@ -190,12 +256,12 @@ a{
     transform: scale(1.2);
 }
 .mode5 .buttons{
-    animation: mode5_magnetic 4s infinite alternate  ;
+    animation: mode5_color 4s infinite alternate  ;
 }
 .mode5 .buttons:nth-child(-n+5){
    animation-delay:  0s;
 }
-.mode5 .buttons:nth-child(n+5):nth-child(-n+16)
+.mode5 .buttons:nth-child(n+6):nth-child(-n+16)
 {
     animation-delay: .8s;
 }
@@ -212,7 +278,7 @@ a{
     animation:none;
 }
 
-@keyframes mode5_magnetic{
+@keyframes mode5_color{
    0%{background-color:#2c7eb4;}
    33%{background-color:#ee2dff;}
    66%{background-color:chartreuse;}

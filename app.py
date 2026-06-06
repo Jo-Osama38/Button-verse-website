@@ -3,8 +3,17 @@ from math import sin , cos , radians
 
 app = Flask(__name__)
 buttons = []
+effects={
+    1:"IDLE CORE",
+    2:"HEARBREAT",
+    3:"TIDAL WAVE",
+    4:"ROLLING ORBIT",
+    5:"SPECTRUM FLOW",
+    6:"LIQUID MORPH",
+}
 
 @app.route("/")
+@app.route("/home")
 def home ():
     global buttons
     buttons= []
@@ -24,12 +33,12 @@ def home ():
             y = center_y + radius *sin(angle)
             buttons.append({"x":x , "y":y , "number": len(buttons) + 2 })
 
-    return render_template('index.html' ,buttons=buttons )
+    return render_template('index.html' ,buttons=buttons,num=1,effects=effects )
 
 
 @app.route("/mode/<int:num>")
 def change_mode(num):
-    return render_template('index.html',buttons = buttons , num=num)
+    return render_template('index.html',buttons = buttons , num=num , effects=effects)
 
 
 
