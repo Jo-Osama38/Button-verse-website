@@ -6,6 +6,7 @@ buttons = []
 
 @app.route("/")
 def home ():
+    global buttons
     buttons= []
     center_x = 600
     center_y = 350

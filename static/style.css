@@ -30,6 +30,9 @@ body{
     left: 51em;
     
 }
+a{
+    text-decoration: none;
+}
 
 .buttons{
     position: absolute;
@@ -88,15 +91,53 @@ body{
 .mode2 a:hover{
     transform: scale(1.2);
 }
-.mode2 .verse{
-    animation: mode2 10s linear infinite;
+.mode2 .buttons{
+    animation: mode2_puls 1.5s infinite alternate ;
 }
-@keyframes mode2 {
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(360deg);
-    }
+@keyframes mode2_puls {
+    0%{transform: scale(1);}
+    
+    100%{transform: scale(1.35);}
+
+}
+
+
+/* #### */
+
+.mode3 a {
+    position: absolute;
+    color: rgb(3, 3, 3);
+    background-color: rgb(44, 126, 180);
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    box-shadow: 0em 0em 2.5em rgb(0, 204, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7em;
+}
+.mode3 a:hover{
+    transform: scale(1.2);
+}
+.mode3 .buttons{
+    animation: mode3_wave 1.3s infinite alternate ;
+}
+.mode3 .buttons:nth-child(-n+5){
+   animation-delay:  0.8s;
+}
+
+.mode3 .buttons:nth-child(n+16):nth-child(-n+30)
+{
+    animation-delay: 1.5s;
+}
+.mode3 #button1{
+    animation-delay: 0s;
+}
+
+@keyframes mode3_wave {
+    0%{transform:translateY(0);}
+    100%{transform: translateY(-30px);}
+
 }
 
