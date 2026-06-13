@@ -5,11 +5,13 @@ app = Flask(__name__)
 buttons = []
 effects={
     1:"IDLE CORE",
-    2:"HEARBREAT",
+    2:"HEARTBEAT",
     3:"TIDAL WAVE",
     4:"ROLLING ORBIT",
     5:"SPECTRUM FLOW",
     6:"LIQUID MORPH",
+    7:"NEON PULSE",
+    8:"BLUR",
 }
 
 @app.route("/")
