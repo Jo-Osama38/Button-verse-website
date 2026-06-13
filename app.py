@@ -12,6 +12,10 @@ effects={
     6:"LIQUID MORPH",
     7:"NEON PULSE",
     8:"BLUR",
+    9:"DARK WORLD",
+    10:"MIRROR",
+    11:"INVISIBLE",
+    15:"NIGHT VISION",
 }
 
 @app.route("/")
