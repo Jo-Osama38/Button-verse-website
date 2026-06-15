@@ -436,3 +436,90 @@ mix-blend-mode:screen;
 
 /* ######## */
 
+.mode12 .buttons , .mode12 h4{
+    animation: black_white 2s forwards;
+}
+@keyframes black_white {
+    to{
+        filter: grayscale(100%);
+
+    }
+
+}
+/* ########## */
+
+.mode13 .buttons , .mode13 h4{
+    animation: glich .15s infinite;
+}
+
+@keyframes glich {
+    0%{
+        transform: translate(0);
+        opacity:0.7;
+    }
+    20%{
+        transform: translate(-5px,2px);
+    }
+    40%{
+        transform: translate(5px,-2px);
+    }
+    60%{
+        transform: translate(-3px,1px);
+    }
+    80%{
+        transform: translate(3px,-1px);
+    }
+}
+
+/* ################# */
+
+.mode14::before{
+content:"";
+position:fixed;
+inset:0;
+background:linear-gradient(30deg,transparent 45%,rgb(52, 255, 235) 50%,transparent 55%),linear-gradient(-30deg,transparent 45%,rgb(52, 255, 235) 50%,transparent 55%),linear-gradient(90deg,transparent 45%,rgb(52, 255, 235) 50%,transparent 55%);
+opacity:.3;
+z-index:9999;
+pointer-events: none;
+}
+
+.mode2 a {
+    position: absolute;
+    color: rgb(3, 3, 3);
+    background-color: rgb(44, 126, 180);
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    box-shadow: 0em 0em 2.5em rgb(0, 204, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7em;
+}
+.mode2 a:hover{
+    transform: scale(1.2);
+}
+/* ############ */
+
+.mode16 .buttons{
+    animation: portal 3s infinite linear;
+    transform-origin:center;
+}
+
+
+@keyframes portal{
+
+0%{transform:rotate(0deg) ranslateX(0px) scale(1);}
+
+50%{
+    transform:rotate(180deg)
+    translateX(120px)
+    scale(.5);
+}
+
+100%{
+    transform: rotate(360deg) translateX(0px) scale(1);
+}
+
+}
+

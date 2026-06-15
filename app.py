@@ -16,6 +16,31 @@ effects={
     10:"MIRROR",
     11:"INVISIBLE",
     15:"NIGHT VISION",
+    12:"BLACK & WHITE",
+    13:"GLITCH",
+    14:"LIGHT LINES ONLY :-)",
+    16:"PORTAL WARR",
+
+
+    32:"Under Development",
+    33:"Under Development",
+    34:"Under Development",
+    35:"Under Development",
+    36:"Under Development",
+    37:"Under Development",
+    38:"Under Development",
+    40:"Under Development",
+    41:"Under Development",
+    42:"Under Development",
+    43:"Under Development",
+    44:"Under Development",
+    45:"Under Development",
+    46:"Under Development",
+    47:"Under Development",
+    48:"Under Development",
+    49:"Under Development",
+    50:"Under Development",
+    51:"Under Development"
 }
 
 @app.route("/")
