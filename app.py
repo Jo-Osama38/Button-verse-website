@@ -1,7 +1,7 @@
-from flask import Flask ,render_template , redirect , url_for
-from math import sin , cos , radians
+from flask import Flask  ,render_template ,   redirect , url_for
+from math import sin , cos ,   radians
 
-app = Flask(__name__)
+app= Flask(__name__)
 buttons = []
 effects={
     1:"IDLE CORE",
@@ -20,8 +20,6 @@ effects={
     13:"GLITCH",
     14:"LIGHT LINES ONLY :-)",
     16:"PORTAL WARR",
-
-
     32:"Under Development",
     33:"Under Development",
     34:"Under Development",
@@ -53,27 +51,27 @@ def home ():
     rotate = 0
     circles = [
         (5, 300),
-        (10, 600),
-        (15, 1000),
-        (20, 1400)]
+        (10, 603),
+        (15, 1001),
+        (20, 1402)]
     for conut,radius in circles:
         rotate =+ 60
         for i in range(conut):
             angle = radians((i*360 / conut )+ rotate)
             x = center_x + radius *cos(angle)
-            y = center_y + radius *sin(angle)
-            buttons.append({"x":x , "y":y , "number": len(buttons) + 2 })
+            y= center_y + radius *sin(angle)
+            buttons.append( { "x":x , "y": y ,"number" : len(buttons) + 2 })
 
-    return render_template('index.html' ,buttons=buttons,num=1,effects=effects )
+    return render_template( 'index.html' ,buttons=buttons,num= 1,effects=effects )
 
 
 @app.route("/mode/<int:num>")
 def change_mode(num):
-    return render_template('index.html',buttons = buttons , num=num , effects=effects)
+    return render_template( 'index.html',buttons = buttons , num=num ,  effects=effects)
 
 
 
     
 
-if __name__ == "__main__":
+if __name__ =="__main__":
     app.run(debug=True)
