@@ -24,7 +24,7 @@
 
 ### لينك الفديو  
 
-لينك : https://yousef38.pythonanywhere.com/
+لينك : https://youtu.be/2OehDdwZFqQ?si=AE_zhcy2RX_qzTJW/
 
 ###  التطويرات المخطط لها مستقبلا أن شاء الله 
 
@@ -68,7 +68,7 @@ Link: https://yousef38.pythonanywhere.com/
 
 ###  Video Link:
 
-Link: https://yousef38.pythonanywhere.com/
+Link: https://youtu.be/2OehDdwZFqQ?si=AE_zhcy2RX_qzTJW
 
 ### Future updates (hopefully):
 
