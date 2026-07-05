@@ -85,10 +85,10 @@ Link: https://youtu.be/2OehDdwZFqQ?si=AE_zhcy2RX_qzTJW
 
 # IMAGES
 
-![](pagehome)
+![](pagehome.png)
 
-![](liquidmode)
+![](liquidmode.png)
 
-![](darkmode)
+![](darkmode.png)
 
 
