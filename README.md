@@ -77,3 +77,18 @@ Link: https://youtu.be/2OehDdwZFqQ?si=AE_zhcy2RX_qzTJW
 - Improve the user experience
 - Update the UI and make it look better
 
+
+
+
+
+
+
+# IMAGES
+
+![](pagehome)
+
+![](liquidmode)
+
+![](darkmode)
+
+
